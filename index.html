@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Maison Noir — Café & Kitchen</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Jost:wght@200;300;400;500&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav id="mainNav">
+  <a class="nav-logo" href="#">Maison Noir</a>
+  <ul class="nav-links">
+    <li><a href="#menu">Menu</a></li>
+    <li><a href="#story">Story</a></li>
+    <li><a href="#experience">Experience</a></li>
+    <li><a href="#contact" class="nav-reserve">Reserve</a></li>
+  </ul>
+</nav>
+
+<!-- SECTION 1 — HERO -->
+<section class="snap hero" id="home">
+  <div class="hero-left">
+    <!-- <img src="https://images.unsplash.com/photo-1445116572660-236099ec97a0?w=1000&q=80" alt="café"/> -->
+    <img src="images/img-table.jpg" alt="café"/>
+
+    <div class="hero-left-content">
+      <p class="overline">Mumbai · Est. 2019 · Café & Kitchen</p>
+      <h1 class="hero-title">Where<br>slow <em>mornings</em><br>begin.</h1>
+      <a href="#menu" class="hero-cta">Explore our menu →</a>
+    </div>
+  </div>
+  <div class="hero-bento">
+    <div class="bento-top">
+      <!-- <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=700&q=80" alt="food"/> -->
+      <img src="images/bowl.jpg" alt="food"/>
+    </div>
+    <div class="bento-bottom">
+      <div class="bento-quote">
+        <p>"Coffee, salads & things made with care."</p>
+      </div>
+      <div class="bento-tag">
+        <span class="num">4.9</span>
+        <span class="lbl">Google rating</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MARQUEE -->
+<div class="marquee-wrap">
+  <div class="marquee-inner">
+    <span>Artisan Coffee</span><span>·</span><span>Seasonal Salads</span><span>·</span><span>Fresh Bakes</span><span>·</span><span>Open Kitchen</span><span>·</span><span>Single Origin</span><span>·</span><span>Farm to Table</span><span>·</span><span>Maison Noir</span><span>·</span>
+    <span>Artisan Coffee</span><span>·</span><span>Seasonal Salads</span><span>·</span><span>Fresh Bakes</span><span>·</span><span>Open Kitchen</span><span>·</span><span>Single Origin</span><span>·</span><span>Farm to Table</span><span>·</span><span>Maison Noir</span><span>·</span>
+  </div>
+</div>
+
+<!-- SECTION 2 — MENU BENTO -->
+<section class="snap menu-section" id="menu">
+  <div class="menu-top-bar">
+    <h2>Our <em>Menu</em></h2>
+    <ul class="menu-tabs">
+      <li class="active">All Day</li>
+      <li>Coffee</li>
+      <li>Food</li>
+      <li>Salads</li>
+    </ul>
+  </div>
+  <div class="menu-bento">
+    <!-- FEATURED -->
+    <div class="menu-card featured">
+      <!-- <img src="https://images.unsplash.com/photo-1547592180-85f173990554?w=800&q=80" alt="signature dish"/> -->
+      <img src="images/food.jpg" alt="signature dish"/>
+      <span class="menu-badge">Chef's Special</span>
+      <p class="menu-tag">Signature · All Day</p>
+      <h3 class="menu-name">Heirloom Tomato<br>& Burrata Bowl</h3>
+      <p class="menu-desc">Slow-roasted heirloom tomatoes, fresh burrata, basil oil, toasted pine nuts, and sourdough croutons.</p>
+      <p class="menu-price">₹ 380</p>
+    </div>
+    <!-- COFFEE -->
+    <div class="menu-card">
+      <p class="menu-tag">Coffee · Hot</p>
+      <h3 class="menu-name">Black Velvet Espresso</h3>
+      <p class="menu-desc">Double ristretto, Madagascar vanilla foam.</p>
+      <p class="menu-price">₹ 280</p>
+    </div>
+    <div class="menu-card">
+      <p class="menu-tag">Coffee · Cold</p>
+      <h3 class="menu-name">Midnight Cold Brew</h3>
+      <p class="menu-desc">18-hour steep, smoked ice, orange zest.</p>
+      <p class="menu-price">₹ 240</p>
+    </div>
+    <!-- FOOD -->
+    <div class="menu-card">
+      <p class="menu-tag">Food · Breakfast</p>
+      <h3 class="menu-name">Avocado Sourdough</h3>
+      <p class="menu-desc">Smashed avo, poached egg, chilli flakes, micro herbs.</p>
+      <p class="menu-price">₹ 320</p>
+    </div>
+    <div class="menu-card">
+      <span class="menu-badge">Vegan</span>
+      <p class="menu-tag">Salad · Fresh</p>
+      <h3 class="menu-name">Quinoa & Roasted Beet</h3>
+      <p class="menu-desc">Tri-colour quinoa, roasted beets, candied walnuts, tahini dressing.</p>
+      <p class="menu-price">₹ 340</p>
+    </div>
+  </div>
+
+  <!-- INLINE EXTENDED MENU -->
+  <div style="display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid rgba(255,255,255,0.06);padding:0 4rem 2.5rem;">
+    <div style="padding:1.5rem 1rem;border-right:1px solid rgba(255,255,255,0.06);">
+      <p style="font-size:0.58rem;letter-spacing:3px;text-transform:uppercase;color:var(--gold);margin-bottom:1rem;font-weight: 600;">Salads</p>
+      <div style="margin-bottom:1rem;"><p style="font-size:0.85rem;color:var(--cream);">Greek Garden</p><p style="font-size:0.75rem;color:rgba(247,242,235,0.35);">₹ 280</p></div>
+      <div style="margin-bottom:1rem;"><p style="font-size:0.85rem;color:var(--cream);">Watermelon Feta Mint</p><p style="font-size:0.75rem;color:rgba(247,242,235,0.35);">₹ 300</p></div>
+      <div style="margin-bottom:1rem;"><p style="font-size:0.85rem;color:var(--cream);">Asian Slaw</p><p style="font-size:0.75rem;color:rgba(247,242,235,0.35);">₹ 260</p></div>
+      <div><p style="font-size:0.85rem;color:var(--cream);">Warm Lentil & Spinach</p><p style="font-size:0.75rem;color:rgba(247,242,235,0.35);">₹ 290</p></div>
+    </div>
+    <div style="padding:1.5rem 1rem;border-right:1px solid rgba(255,255,255,0.06);">
+      <p style="font-size:0.58rem;letter-spacing:3px;text-transform:uppercase;color:var(--gold);margin-bottom:1rem;font-weight: 600;">Mains</p>
+      <div style="margin-bottom:1rem;"><p style="font-size:0.85rem;color:var(--cream);">Mushroom Risotto</p><p style="font-size:0.75rem;color:rgba(247,242,235,0.35);">₹ 420</p></div>
+      <div style="margin-bottom:1rem;"><p style="font-size:0.85rem;color:var(--cream);">Pesto Pasta</p><p style="font-size:0.75rem;color:rgba(247,242,235,0.35);">₹ 360</p></div>
+      <div style="margin-bottom:1rem;"><p style="font-size:0.85rem;color:var(--cream);">Shakshuka</p><p style="font-size:0.75rem;color:rgba(247,242,235,0.35);">₹ 340</p></div>
+      <div><p style="font-size:0.85rem;color:var(--cream);">Grilled Paneer Bowl</p><p style="font-size:0.75rem;color:rgba(247,242,235,0.35);">₹ 380</p></div>
+    </div>
+    <div style="padding:1.5rem 1rem;border-right:1px solid rgba(255,255,255,0.06);">
+      <p style="font-size:0.58rem;letter-spacing:3px;text-transform:uppercase;color:var(--gold);margin-bottom:1rem;font-weight: 600;">Bakes & Snacks</p>
+      <div style="margin-bottom:1rem;"><p style="font-size:0.85rem;color:var(--cream);">Cardamom Kouign</p><p style="font-size:0.75rem;color:rgba(247,242,235,0.35);">₹ 160</p></div>
+      <div style="margin-bottom:1rem;"><p style="font-size:0.85rem;color:var(--cream);">Butter Croissant</p><p style="font-size:0.75rem;color:rgba(247,242,235,0.35);">₹ 120</p></div>
+      <div style="margin-bottom:1rem;"><p style="font-size:0.85rem;color:var(--cream);">Banana Walnut Cake</p><p style="font-size:0.75rem;color:rgba(247,242,235,0.35);">₹ 180</p></div>
+      <div><p style="font-size:0.85rem;color:var(--cream);">Cheese Focaccia</p><p style="font-size:0.75rem;color:rgba(247,242,235,0.35);">₹ 200</p></div>
+    </div>
+    <div style="padding:1.5rem 1rem;">
+      <p style="font-size:0.58rem;letter-spacing:3px;text-transform:uppercase;color:var(--gold);margin-bottom:1rem;font-weight: 600;">Drinks</p>
+      <div style="margin-bottom:1rem;"><p style="font-size:0.85rem;color:var(--cream);">Rose Oat Latte</p><p style="font-size:0.75rem;color:rgba(247,242,235,0.35);">₹ 260</p></div>
+      <div style="margin-bottom:1rem;"><p style="font-size:0.85rem;color:var(--cream);">Matcha Lemonade</p><p style="font-size:0.75rem;color:rgba(247,242,235,0.35);">₹ 220</p></div>
+      <div style="margin-bottom:1rem;"><p style="font-size:0.85rem;color:var(--cream);">Turmeric Latte</p><p style="font-size:0.75rem;color:rgba(247,242,235,0.35);">₹ 200</p></div>
+      <div><p style="font-size:0.85rem;color:var(--cream);">Fresh Pressed Juice</p><p style="font-size:0.75rem;color:rgba(247,242,235,0.35);">₹ 180</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION 3 — ABOUT BENTO -->
+<section class="snap about-bento" id="story">
+  <div class="ab-img">
+    <!-- <img src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?w=900&q=80" alt="interior"/> -->
+    <img src="images/interior.jpg" alt="interior"/>
+  </div>
+  <div class="ab-text">
+    <div class="sec-num">01</div>
+    <h2>A kitchen born<br>from <em>slow living</em>.</h2>
+    <div style="width:36px;height:1px;background:var(--gold);margin:1rem 0 1.5rem;"></div>
+    <p>Maison Noir started with one conviction — that food and coffee deserve the same level of obsession. We source ingredients from local farms, roast our beans weekly, and bake everything in-house before you arrive each morning.</p>
+  </div>
+  <div class="ab-stats">
+    <div class="ab-stat"><div class="n">6+</div><div class="l">Bean Origins</div></div>
+    <div class="ab-stat"><div class="n">40+</div><div class="l">Menu Items</div></div>
+    <div class="ab-stat"><div class="n">5★</div><div class="l">Rated</div></div>
+  </div>
+</section>
+
+<!-- SECTION 4 — EXPERIENCE FULL SCREEN -->
+<section class="snap experience" id="experience">
+  <!-- <img src="https://images.unsplash.com/photo-1600093463592-8e36ae95ef56?w=1400&q=80" alt="experience"/> -->
+  <img src="images/interior-outdoor.jpg" alt="experience"/>
+
+  <div class="experience-overlay"></div>
+  <div class="experience-content">
+    <div class="exp-left">
+      <h2>Every detail<br>is <em>intentional</em>.</h2>
+    </div>
+    <div class="exp-right">
+      <div class="exp-item">
+        <h4>The Bean</h4>
+        <p>Direct-trade micro-lots from Coorg, Chikmagalur, and Ethiopia. Roasted in-house weekly in small batches.</p>
+      </div>
+      <div class="exp-item">
+        <h4>The Kitchen</h4>
+        <p>Open kitchen, seasonal menu. We change dishes based on what's fresh at the farm — not what's convenient.</p>
+      </div>
+      <div class="exp-item">
+        <h4>The Space</h4>
+        <p>Designed to make time slow down. Natural light, handmade ceramics, and chairs you won't want to leave.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION 5 — CONTACT BENTO -->
+<section class="snap contact-bento" id="contact">
+  <div class="cb-info">
+    <h2>Come<br><em>find us.</em></h2>
+    <div class="cb-detail"><div class="lbl">Address</div><p>14, Carter Road, Bandra West, Mumbai — 400050</p></div>
+    <div class="cb-detail"><div class="lbl">Hours</div><p>Daily 7:00 am — 10:00 pm</p></div>
+    <div class="cb-detail"><div class="lbl">Phone</div><p>+91 98765 43210</p></div>
+    <div class="cb-detail"><div class="lbl">Email</div><p>hello@maisonnoir.in</p></div>
+  </div>
+  <div class="cb-form">
+    <h3>Leave us<br>a note.</h3>
+    <div class="field"><label>Name</label><input type="text"/></div>
+    <div class="field"><label>Email</label><input type="email"/></div>
+    <div class="field"><label>Occasion</label>
+      <select><option value="" disabled selected>Select...</option><option>Table Reservation</option><option>Private Event</option><option>Catering Enquiry</option><option>General</option></select>
+    </div>
+    <div class="field"><label>Message</label><textarea></textarea></div>
+    <button class="btn-submit">Send →</button>
+  </div>
+  <div class="cb-img">
+    <!-- <img src="https://images.unsplash.com/photo-1493770348161-369560ae357d?w=700&q=80" alt="food"/> -->
+    <img src="images/breakfast.jpg" alt="food"/> 
+  </div>
+  <div class="cb-hours">
+    <p>Open Every Day</p>
+    <span>7:00 AM — 10:00 PM</span>
+    <p>Bandra West, Mumbai</p>
+  </div>
+</section>
+
+<footer>
+  <p>© 2024 Maison Noir Café & Kitchen. All rights reserved.</p>
+  <div class="footer-links">
+    <a href="#">Instagram</a>
+    <a href="#">Google Maps</a>
+    <a href="#">Reservations</a>
+  </div>
+</footer>
+
+<script>
+const nav = document.getElementById('mainNav');
+window.addEventListener('scroll',()=>nav.classList.toggle('scrolled',window.scrollY>80));
+</script>
+</body>
+</html>
